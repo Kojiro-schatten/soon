@@ -6,4 +6,6 @@ export type AppButtonPropsType = {
   onPress: () => void
 }
 
-export const AppButton: React.FunctionComponent<AppButtonPropsType> = (props: AppButtonPropsType) => <Button title={props.title} onPress={props.onPress} />;
+export const AppButton: React.FunctionComponent<AppButtonPropsType> = (
+  props: AppButtonPropsType,
+) => <Button title={props.title} onPress={props.onPress} />;
