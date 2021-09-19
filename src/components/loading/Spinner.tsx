@@ -1,22 +1,25 @@
 import React from 'react';
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, View, Text } from 'react-native';
 
-export const Spinner: React.FC = () => (
+export type SpinnerPropsType = {
+  size: number;
+  color?: string;
+};
+
+export const Spinner: React.FC<SpinnerPropsType> = (
+  props: SpinnerPropsType
+) => (
   <View style={[styles.container, styles.horizontal]}>
-    <ActivityIndicator size="large" />
+    <ActivityIndicator size={props.size} color={props.color}/>
   </View>
 );
 
 const styles = StyleSheet.create({
   container: {
-    flex: 0.5,
     justifyContent: 'center'
   },
   horizontal: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    padding: 10
   }
 });
-
-export default Spinner;
