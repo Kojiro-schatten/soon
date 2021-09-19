@@ -4,6 +4,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack'; // Stac
 import { RootStackParamsList } from '../../types';
 import { useNavigation } from '@react-navigation/native';
 import { AppButton } from '../../components/button/AppButton';
+import { PopUp } from '../../components/modal/PopUp';
 
 type authScreenProp = NativeStackScreenProps<RootStackParamsList, 'Main'>;
 
@@ -13,9 +14,9 @@ export const AuthScreen: React.FC = () => {
   return (
     <View style={[styles.container, styles.layout]}>
       <View style={{}}>
-
         <Text style={styles.mainText}>Soon!</Text>
       </View>
+      <PopUp />
       <AppButton title={'Google'} onPress={() => navigation.navigate('Main')} />
       {/* <Button title="Login" onPress={() => navigation.navigate('Main')} /> */}
     </View>
