@@ -6,7 +6,7 @@ import { MainBottomTabParamsList } from './MainBottomTabParams';
 
 type mainScreenProp = NativeStackScreenProps<MainBottomTabParamsList, 'Details'>;
 
-export const DetailScreen: React.FC = () => {
+export const DetailsScreen: React.FC = () => {
   const navigation = useNavigation<mainScreenProp>();
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
