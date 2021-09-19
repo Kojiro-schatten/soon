@@ -2,10 +2,10 @@ import React from 'react';
 import { Button } from 'react-native';
 
 export type AppButtonPropsType = {
-  style?: string,
-  title: string,
-  onPress: () => void
-}
+  style?: string;
+  title: string;
+  onPress: () => void;
+};
 
 export const AppButton: React.FunctionComponent<AppButtonPropsType> = (
   props: AppButtonPropsType,
@@ -13,6 +13,6 @@ export const AppButton: React.FunctionComponent<AppButtonPropsType> = (
 
 // const styles = StyleSheet.create({
 //   button: {
-    
+
 //   }
 // });

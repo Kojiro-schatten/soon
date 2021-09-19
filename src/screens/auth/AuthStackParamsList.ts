@@ -1,4 +1,4 @@
 export type AuthStackParamsList = {
-  login: undefined
-  signup: undefined
-}
+  login: undefined;
+  signup: undefined;
+};
