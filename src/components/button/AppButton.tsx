@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'react-native';
 
 export type AppButtonPropsType = {
-  style: string,
+  style?: string,
   title: string,
   onPress: () => void
 }
