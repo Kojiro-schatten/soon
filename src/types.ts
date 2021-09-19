@@ -26,5 +26,6 @@ export type RootNavigatorParamsList = {
 export type RootStackParamsList = {
   Main: undefined
   Auth: undefined
+  Home: undefined
   Modal: undefined
 }

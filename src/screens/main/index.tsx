@@ -1,19 +1,18 @@
-
-import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {View, Text, Button} from 'react-native';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import {RootStackParamsList} from '../../types';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { MainBottomTabParamsList } from './mainBottomTabParams';
+import {HomeScreen} from './HomeScreen';
+import {DetailsScreen} from './DetailsScreen';
 
-type mainScreenProp = NativeStackScreenProps<RootStackParamsList, 'Main'>;
+const BottomTab = createBottomTabNavigator<MainBottomTabParamsList>();
 
 export const MainScreen: React.FC = () => {
-  const navigation = useNavigation<mainScreenProp>();
+
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Main Screen</Text>
-      <Button title="Login" onPress={() => navigation.navigate('Auth')} />
-    </View>
+    <BottomTab.Navigator>
+      <BottomTab.Screen name="Home" component={HomeScreen} />
+      <BottomTab.Screen name="Details" component={DetailsScreen} />
+    </BottomTab.Navigator>
   );
 };
 
