@@ -6,7 +6,7 @@ import { MainBottomTabParamsList } from './MainBottomTabParams';
 
 type mainScreenProp = NativeStackScreenProps<MainBottomTabParamsList, 'Details'>;
 
-function DetailsScreen(): JSX.Element {
+export const DetailScreen: React.FC = () => {
   const navigation = useNavigation<mainScreenProp>();
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -14,5 +14,4 @@ function DetailsScreen(): JSX.Element {
       <Button title="Auth" onPress={() => navigation.navigate('Auth')} />
     </View>
   );
-}
-export { DetailsScreen };
+};
