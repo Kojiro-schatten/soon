@@ -11,7 +11,7 @@ export const RoomScreen: React.FC = () => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Room Screen</Text>
-      <Button title="Roomページにいく" onPress={() => navigation.navigate('Room')} />
+      <Text>ここがチャットスペース</Text>
     </View>
   );
 };

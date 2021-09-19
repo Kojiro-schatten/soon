@@ -5,6 +5,7 @@ import {HomeScreen} from '../home/HomeScreen';
 import {RoomListsScreen} from '../room/RoomListsScreen';
 // import {List} from './ListScreen'; TODO:優先度中
 
+// ボトムタブのparams
 const BottomTab = createBottomTabNavigator<MainBottomTabParamsList>();
 
 export const MainScreen: React.FC = () => {
