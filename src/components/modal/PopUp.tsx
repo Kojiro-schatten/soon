@@ -36,7 +36,7 @@ export const PopUp: React.FC = () => {
 
 const styles = StyleSheet.create({
   centeredView: {
-    flex: 1,
+    flex: 0.5,
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 22

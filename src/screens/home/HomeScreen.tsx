@@ -16,6 +16,7 @@ type HomeScreenProp = CompositeNavigationProp<
 export const HomeScreen: React.FC = () => {
   const navigation = useNavigation<HomeScreenProp>();
   const [showSpinner, setShowSpinner] = useState(true);
+
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Home Screen</Text>
@@ -23,7 +24,7 @@ export const HomeScreen: React.FC = () => {
       <Button title="スピナーのOn/Off" onPress={() => setShowSpinner(!showSpinner)} />
       {showSpinner ? 
         <Spinner size={40} color={'#000000'}/>
-        : ''
+        : undefined
       }
     </View>
   );

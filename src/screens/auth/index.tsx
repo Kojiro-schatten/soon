@@ -16,8 +16,8 @@ export const AuthScreen: React.FC = () => {
       <View style={{}}>
         <Text style={styles.mainText}>Soon!</Text>
       </View>
-      <PopUp />
-      <AppButton title={'Google'} onPress={() => navigation.navigate('Main')} />
+      {/* <PopUp /> */}
+      <AppButton title={'SignIn'} onPress={() => navigation.navigate('Main')} />
       {/* <Button title="Login" onPress={() => navigation.navigate('Main')} /> */}
     </View>
   );
