@@ -5,12 +5,12 @@ import { View, TextInput, Button, StyleSheet } from 'react-native';
 import { useForm, Controller } from 'react-hook-form';
 
 export type TextInputFormPropsType = {
-  input: string
-}
+  input: string;
+};
 
 export const TextInputForm: React.FunctionComponent<TextInputFormPropsType> = () => {
   const { control, handleSubmit } = useForm();
-  const onSubmit = (data:TextInputFormPropsType) => console.log(data);
+  const onSubmit = (data: TextInputFormPropsType) => console.log(data);
 
   return (
     <View style={styles.inputFormWrapper}>
@@ -28,7 +28,7 @@ export const TextInputForm: React.FunctionComponent<TextInputFormPropsType> = ()
             placeholder="placeholder"
           />
         )}
-        name='name'
+        name="name"
         defaultValue=""
       />
       <Button title="Submit" onPress={handleSubmit(onSubmit)} />

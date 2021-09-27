@@ -12,7 +12,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<TextInputFormPropsType> = (args) => <TextInputForm {...args}/>;
+const Template: Story<TextInputFormPropsType> = (args) => <TextInputForm {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
