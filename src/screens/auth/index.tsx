@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack'; // StackNaviationPropsはNativeStackScreenPropsになった。
 import { RootStackParamsList } from '../../types';
 import { useNavigation } from '@react-navigation/native';
 import { AppButton } from '../../components/button/AppButton';
-import { PopUp } from '../../components/modal/PopUp';
+// import { PopUp } from '../../components/modal/PopUp';
 
 type authScreenProp = NativeStackScreenProps<RootStackParamsList, 'Main'>;
 
@@ -31,10 +31,10 @@ const styles = StyleSheet.create({
   },
   layout: {
     paddingRight: 5,
-    paddingLeft:5,
+    paddingLeft: 5,
   },
   mainText: {
     fontSize: 40,
-    color: '#8f8f8f'
-  }
+    color: '#8f8f8f',
+  },
 });

@@ -1,5 +1,5 @@
 import { useNavigation } from '@react-navigation/native';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { View, Text, Button } from 'react-native';
 import { CompositeNavigationProp } from '@react-navigation/native';
 import { RootStackParamsList } from '../../types';
@@ -22,10 +22,7 @@ export const HomeScreen: React.FC = () => {
       <Text>Home Screen</Text>
       <Button title="作成する" onPress={() => navigation.navigate('RoomLists')} />
       <Button title="スピナーのOn/Off" onPress={() => setShowSpinner(!showSpinner)} />
-      {showSpinner ? 
-        <Spinner size={40} color={'#000000'}/>
-        : undefined
-      }
+      {showSpinner ? <Spinner size={40} color={'#000000'} /> : undefined}
     </View>
   );
 };
