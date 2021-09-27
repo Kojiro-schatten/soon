@@ -3,4 +3,5 @@ export type RootStackParamsList = {
   Auth: undefined;
   Home: undefined;
   Modal: undefined;
+  Room: undefined;
 };

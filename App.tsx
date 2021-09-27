@@ -4,6 +4,7 @@ import {RootStackParamsList} from './src/types';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { AuthScreen } from './src/screens/auth';
 import { MainScreen } from './src/screens/main';
+import { RoomScreen } from './src/screens/room/Room';
 
 const Stack = createNativeStackNavigator<RootStackParamsList>();
 
@@ -14,6 +15,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Auth" component={AuthScreen} />
         <Stack.Screen name="Main" component={MainScreen} />
+        <Stack.Screen name="Room" component={RoomScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
